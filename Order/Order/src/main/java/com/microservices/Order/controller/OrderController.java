@@ -21,6 +21,7 @@ public class OrderController {
     @GetMapping("/{orderId}/product")
     public ProductResponse getProductDetailsForOrder(@PathVariable Long orderId) {
         // Fetch product details for the order using the OrderService
+    	System.out.println("hello=-");
         return orderService.getProductByIdFromProductService(orderId);
     }
     
